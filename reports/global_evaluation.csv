@@ -1,0 +1,101 @@
+model,MAE,RMSE,horizon_h,region
+Persistence,3.59,14.86,1,ALL
+Climatology,14.48,29.58,1,ALL
+XGBoost (raw),3.93,14.12,1,ALL
+"XGBoost (blended, deployed)",3.49,14.25,1,ALL
+Deployed,3.45,5.41,1,Africa / Middle East
+Persistence,3.36,5.45,1,Africa / Middle East
+Deployed,6.64,33.01,1,East Asia
+Persistence,6.72,34.37,1,East Asia
+Deployed,0.22,0.51,1,Europe
+Persistence,0.22,0.51,1,Europe
+Deployed,3.11,4.93,1,North America
+Persistence,3.18,5.0,1,North America
+Deployed,2.12,3.21,1,Oceania
+Persistence,2.2,3.28,1,Oceania
+Deployed,3.32,5.29,1,South America
+Persistence,3.46,5.7,1,South America
+Deployed,23.28,36.03,1,South Asia
+Persistence,24.25,37.71,1,South Asia
+Deployed,0.39,0.65,1,Southeast Asia
+Persistence,0.39,0.65,1,Southeast Asia
+Persistence,6.34,21.57,3,ALL
+Climatology,14.68,31.11,3,ALL
+XGBoost (raw),6.1,20.02,3,ALL
+"XGBoost (blended, deployed)",5.76,18.93,3,ALL
+Deployed,5.58,7.8,3,Africa / Middle East
+Persistence,5.87,8.57,3,Africa / Middle East
+Deployed,13.03,41.35,3,East Asia
+Persistence,13.35,46.82,3,East Asia
+Deployed,0.58,1.06,3,Europe
+Persistence,0.58,1.06,3,Europe
+Deployed,4.77,7.0,3,North America
+Persistence,5.26,8.03,3,North America
+Deployed,2.84,4.04,3,Oceania
+Persistence,3.12,4.43,3,Oceania
+Deployed,4.39,6.7,3,South America
+Persistence,5.14,8.03,3,South America
+Deployed,41.55,57.87,3,South Asia
+Persistence,48.59,66.6,3,South Asia
+Deployed,1.09,1.49,3,Southeast Asia
+Persistence,1.09,1.49,3,Southeast Asia
+Persistence,8.81,27.79,6,ALL
+Climatology,14.93,31.64,6,ALL
+XGBoost (raw),7.53,22.14,6,ALL
+"XGBoost (blended, deployed)",7.28,21.81,6,ALL
+Deployed,6.3,8.07,6,Africa / Middle East
+Persistence,7.15,9.86,6,Africa / Middle East
+Deployed,18.7,48.3,6,East Asia
+Persistence,20.05,58.34,6,East Asia
+Deployed,1.11,1.82,6,Europe
+Persistence,1.09,1.85,6,Europe
+Deployed,5.8,8.23,6,North America
+Persistence,7.22,10.73,6,North America
+Deployed,2.97,4.01,6,Oceania
+Persistence,3.38,4.82,6,Oceania
+Deployed,5.0,8.87,6,South America
+Persistence,6.3,9.46,6,South America
+Deployed,49.87,64.49,6,South Asia
+Persistence,72.93,94.37,6,South Asia
+Deployed,2.34,3.2,6,Southeast Asia
+Persistence,2.02,2.71,6,Southeast Asia
+Persistence,11.25,33.79,12,ALL
+Climatology,15.09,32.97,12,ALL
+XGBoost (raw),8.59,24.37,12,ALL
+"XGBoost (raw, deployed)",8.59,24.37,12,ALL
+Deployed,7.59,9.56,12,Africa / Middle East
+Persistence,8.9,11.46,12,Africa / Middle East
+Deployed,24.23,57.23,12,East Asia
+Persistence,28.48,74.42,12,East Asia
+Deployed,1.91,3.07,12,Europe
+Persistence,2.01,3.28,12,Europe
+Deployed,6.39,9.06,12,North America
+Persistence,8.91,12.83,12,North America
+Deployed,3.28,4.26,12,Oceania
+Persistence,3.63,5.08,12,Oceania
+Deployed,5.31,7.91,12,South America
+Persistence,7.2,10.69,12,South America
+Deployed,50.31,63.13,12,South Asia
+Persistence,88.15,106.4,12,South Asia
+Deployed,5.8,7.02,12,Southeast Asia
+Persistence,3.74,4.9,12,Southeast Asia
+Persistence,10.48,30.99,24,ALL
+Climatology,14.59,32.26,24,ALL
+XGBoost (raw),9.46,25.47,24,ALL
+"XGBoost (blended, deployed)",9.38,26.03,24,ALL
+Deployed,8.42,10.55,24,Africa / Middle East
+Persistence,8.98,11.75,24,Africa / Middle East
+Deployed,29.04,64.22,24,East Asia
+Persistence,33.12,77.18,24,East Asia
+Deployed,2.93,4.55,24,Europe
+Persistence,3.31,5.36,24,Europe
+Deployed,6.44,9.14,24,North America
+Persistence,7.46,10.8,24,North America
+Deployed,3.4,4.49,24,Oceania
+Persistence,3.56,5.12,24,Oceania
+Deployed,5.58,8.09,24,South America
+Persistence,6.48,9.98,24,South America
+Deployed,47.19,60.14,24,South Asia
+Persistence,50.08,68.8,24,South Asia
+Deployed,7.98,9.8,24,Southeast Asia
+Persistence,6.91,8.82,24,Southeast Asia

@@ -1,0 +1,36 @@
+{
+  "horizons": [
+    1,
+    3,
+    6,
+    12,
+    24
+  ],
+  "cities": [
+    "Bengaluru",
+    "Chennai",
+    "Delhi",
+    "Gurugram",
+    "Hyderabad",
+    "Jaipur",
+    "Kolkata",
+    "Lucknow",
+    "Mumbai",
+    "Patna"
+  ],
+  "city_dummy_cols": [
+    "city_Bengaluru",
+    "city_Chennai",
+    "city_Delhi",
+    "city_Gurugram",
+    "city_Hyderabad",
+    "city_Jaipur",
+    "city_Kolkata",
+    "city_Lucknow",
+    "city_Mumbai",
+    "city_Patna"
+  ],
+  "train_years": "<= 2018",
+  "cal_year": 2019,
+  "test_year": 2020
+}

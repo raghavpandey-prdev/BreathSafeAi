@@ -1,0 +1,11 @@
+{
+  "season_q_hats": {
+    "winter": 123.73778147970387,
+    "summer": 57.36985090936897,
+    "monsoon": 34.700978251315426
+  },
+  "global_q_hat": 87.4880813555917,
+  "target_confidence": 0.9,
+  "empirical_coverage": 0.8991307052583328,
+  "forecast_horizon_hours": 6
+}

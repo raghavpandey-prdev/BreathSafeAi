@@ -1,0 +1,121 @@
+model,MAE,RMSE,horizon_h,city
+Persistence,9.93,19.65,1,ALL
+Climatology,53.77,71.58,1,ALL
+XGBoost (raw),9.26,17.16,1,ALL
+"XGBoost (blended, deployed)",9.07,17.13,1,ALL
+XGBoost (blended),5.22,11.55,1,Bengaluru
+Persistence,5.77,13.59,1,Bengaluru
+XGBoost (blended),6.45,16.67,1,Chennai
+Persistence,6.51,18.38,1,Chennai
+XGBoost (blended),12.34,21.09,1,Delhi
+Persistence,13.95,24.57,1,Delhi
+XGBoost (blended),8.2,14.97,1,Gurugram
+Persistence,8.71,16.24,1,Gurugram
+XGBoost (blended),4.4,6.36,1,Hyderabad
+Persistence,4.72,6.95,1,Hyderabad
+XGBoost (blended),8.18,12.26,1,Jaipur
+Persistence,8.57,13.04,1,Jaipur
+XGBoost (blended),4.54,7.95,1,Kolkata
+Persistence,4.8,8.83,1,Kolkata
+XGBoost (blended),10.85,22.35,1,Lucknow
+Persistence,12.08,25.83,1,Lucknow
+XGBoost (blended),6.78,12.17,1,Mumbai
+Persistence,7.13,13.17,1,Mumbai
+XGBoost (blended),7.78,15.44,1,Patna
+Persistence,6.48,16.01,1,Patna
+Persistence,19.99,37.51,3,ALL
+Climatology,54.85,73.04,3,ALL
+XGBoost (raw),16.87,28.39,3,ALL
+"XGBoost (blended, deployed)",16.49,28.35,3,ALL
+XGBoost (blended),8.32,16.56,3,Bengaluru
+Persistence,10.59,22.11,3,Bengaluru
+XGBoost (blended),10.65,22.7,3,Chennai
+Persistence,11.17,27.07,3,Chennai
+XGBoost (blended),22.95,35.78,3,Delhi
+Persistence,29.01,48.73,3,Delhi
+XGBoost (blended),15.48,24.61,3,Gurugram
+Persistence,17.36,29.21,3,Gurugram
+XGBoost (blended),7.09,9.87,3,Hyderabad
+Persistence,8.48,12.28,3,Hyderabad
+XGBoost (blended),11.73,17.19,3,Jaipur
+Persistence,14.21,21.3,3,Jaipur
+XGBoost (blended),9.73,16.24,3,Kolkata
+Persistence,10.34,18.33,3,Kolkata
+XGBoost (blended),20.51,37.76,3,Lucknow
+Persistence,24.93,48.57,3,Lucknow
+XGBoost (blended),11.0,17.86,3,Mumbai
+Persistence,12.67,21.6,3,Mumbai
+XGBoost (blended),14.98,24.12,3,Patna
+Persistence,13.63,27.52,3,Patna
+Persistence,27.46,49.8,6,ALL
+Climatology,56.81,75.61,6,ALL
+XGBoost (raw),20.94,33.48,6,ALL
+"XGBoost (blended, deployed)",20.53,33.11,6,ALL
+XGBoost (blended),9.53,19.3,6,Bengaluru
+Persistence,13.19,25.86,6,Bengaluru
+XGBoost (blended),12.95,24.82,6,Chennai
+Persistence,14.31,31.59,6,Chennai
+XGBoost (blended),28.17,41.47,6,Delhi
+Persistence,40.43,65.75,6,Delhi
+XGBoost (blended),21.09,30.28,6,Gurugram
+Persistence,24.33,39.47,6,Gurugram
+XGBoost (blended),8.44,11.33,6,Hyderabad
+Persistence,10.94,15.56,6,Hyderabad
+XGBoost (blended),13.78,19.6,6,Jaipur
+Persistence,17.43,26.17,6,Jaipur
+XGBoost (blended),14.71,22.97,6,Kolkata
+Persistence,15.7,27.03,6,Kolkata
+XGBoost (blended),25.59,42.93,6,Lucknow
+Persistence,33.54,59.89,6,Lucknow
+XGBoost (blended),12.7,19.62,6,Mumbai
+Persistence,16.05,26.51,6,Mumbai
+XGBoost (blended),21.26,31.11,6,Patna
+Persistence,20.13,37.2,6,Patna
+Persistence,31.49,55.39,12,ALL
+Climatology,57.03,75.68,12,ALL
+XGBoost (raw),22.98,35.94,12,ALL
+"XGBoost (blended, deployed)",22.46,35.44,12,ALL
+XGBoost (blended),9.98,22.91,12,Bengaluru
+Persistence,12.58,27.74,12,Bengaluru
+XGBoost (blended),15.03,26.77,12,Chennai
+Persistence,15.44,33.98,12,Chennai
+XGBoost (blended),30.36,43.84,12,Delhi
+Persistence,46.86,73.2,12,Delhi
+XGBoost (blended),24.37,32.99,12,Gurugram
+Persistence,29.31,45.73,12,Gurugram
+XGBoost (blended),9.09,12.16,12,Hyderabad
+Persistence,11.75,16.83,12,Hyderabad
+XGBoost (blended),13.82,19.99,12,Jaipur
+Persistence,16.26,25.07,12,Jaipur
+XGBoost (blended),18.36,26.82,12,Kolkata
+Persistence,19.98,33.39,12,Kolkata
+XGBoost (blended),27.88,45.33,12,Lucknow
+Persistence,36.34,63.11,12,Lucknow
+XGBoost (blended),14.31,21.7,12,Mumbai
+Persistence,18.75,30.38,12,Mumbai
+XGBoost (blended),22.74,33.8,12,Patna
+Persistence,24.46,42.22,12,Patna
+Persistence,24.32,42.39,24,ALL
+Climatology,53.54,70.38,24,ALL
+XGBoost (raw),23.85,36.31,24,ALL
+"XGBoost (blended, deployed)",22.55,35.4,24,ALL
+XGBoost (blended),10.35,22.74,24,Bengaluru
+Persistence,11.64,27.22,24,Bengaluru
+XGBoost (blended),14.01,27.35,24,Chennai
+Persistence,12.99,31.94,24,Chennai
+XGBoost (blended),30.38,42.94,24,Delhi
+Persistence,33.88,52.88,24,Delhi
+XGBoost (blended),23.38,32.74,24,Gurugram
+Persistence,23.3,35.84,24,Gurugram
+XGBoost (blended),9.37,12.67,24,Hyderabad
+Persistence,9.85,13.83,24,Hyderabad
+XGBoost (blended),14.71,21.34,24,Jaipur
+Persistence,15.55,24.19,24,Jaipur
+XGBoost (blended),17.46,27.14,24,Kolkata
+Persistence,16.76,27.65,24,Kolkata
+XGBoost (blended),30.15,48.03,24,Lucknow
+Persistence,33.35,58.37,24,Lucknow
+XGBoost (blended),14.93,23.58,24,Mumbai
+Persistence,15.66,25.98,24,Mumbai
+XGBoost (blended),22.13,35.24,24,Patna
+Persistence,21.05,37.85,24,Patna

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BreatheSafe AI</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Segoe UI', system-ui, sans-serif; }
+  .risk-badge { display: inline-flex; align-items: center; gap: 6px; }
+  .risk-Good, .risk-Satisfactory { background: #dcfce7; color: #166534; }
+  .risk-Moderate { background: #fef9c3; color: #854d0e; }
+  .risk-Poor { background: #ffedd5; color: #9a3412; }
+  .risk-VeryPoor { background: #fee2e2; color: #991b1b; }
+  .risk-Severe { background: #f3e8ff; color: #6b21a8; }
+  .accent-Good, .accent-Satisfactory { border-left-color: #16a34a; }
+  .accent-Moderate { border-left-color: #ca8a04; }
+  .accent-Poor { border-left-color: #ea580c; }
+  .accent-VeryPoor { border-left-color: #dc2626; }
+  .accent-Severe { border-left-color: #9333ea; }
+</style>
+</head>
+<body class="bg-gradient-to-br from-sky-50 to-indigo-100 min-h-screen">
+
+<div class="max-w-5xl mx-auto p-6">
+
+  <div class="flex items-center gap-3 mb-1">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M4 8h9a3 3 0 1 0-2.5-4.7"/>
+      <path d="M2 13h13a3 3 0 1 1-2.5 4.7"/>
+      <path d="M4 18h7"/>
+    </svg>
+    <h1 class="text-3xl font-bold text-slate-800">BreatheSafe AI</h1>
+  </div>
+  <p class="text-slate-500 mb-8">Personalized, live air quality forecasting — anywhere</p>
+
+  <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
+    <h2 class="font-semibold text-slate-700 mb-1">Your Profile</h2>
+    <p class="text-xs text-slate-400 mb-4">This changes how cautious your advice is — check anything that applies to you.</p>
+
+    <label class="block text-sm font-medium text-slate-600 mb-2">Age group</label>
+    <select id="ageGroup" class="border rounded-lg p-2 w-full mb-4">
+      <option value="adult" selected>Healthy adult (18-59)</option>
+      <option value="child">Child (under 12)</option>
+      <option value="teen">Teen (12-17)</option>
+      <option value="elderly">60+</option>
+    </select>
+
+    <label class="block text-sm font-medium text-slate-600 mb-2">Health conditions</label>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+      <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" id="asthma"> Asthma/COPD</label>
+      <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" id="heart"> Heart condition</label>
+      <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" id="pregnant"> Pregnant</label>
+      <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" id="outdoor"> Outdoor occupation</label>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <label class="block text-sm font-medium text-slate-600 mb-2">Planned activity</label>
+        <select id="activity" class="border rounded-lg p-2 w-full">
+          <option value="outdoor_exercise">Outdoor exercise</option>
+          <option value="commute">Commute</option>
+          <option value="general_outdoor" selected>General outdoor time</option>
+          <option value="indoor">Staying indoors</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-slate-600 mb-2">Message language</label>
+        <select id="language" class="border rounded-lg p-2 w-full">
+          <option value="hinglish" selected>Hinglish</option>
+          <option value="hindi">Hindi</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-slate-600 mb-2">Message tone</label>
+        <select id="tone" class="border rounded-lg p-2 w-full">
+          <option value="informative" selected>Informative</option>
+          <option value="gentle">Gentle</option>
+          <option value="direct">Direct</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="font-semibold text-slate-700">Your Locations</h2>
+      <button onclick="addLocation()" class="text-sm bg-indigo-600 text-white px-3 py-1.5 rounded-lg hover:bg-indigo-700">+ Add location</button>
+    </div>
+    <div id="locationInputs" class="space-y-2"></div>
+    <button onclick="checkAll()" class="mt-4 w-full bg-slate-800 text-white py-2.5 rounded-lg hover:bg-slate-900 font-medium flex items-center justify-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      Check Air Quality
+    </button>
+  </div>
+
+  <div id="results" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+</div>
+
+<script>
+const API = "http://localhost:8000";
+let locationCount = 0;
+
+function addLocation(defaultName = "", defaultVal = "") {
+  locationCount++;
+  const id = `loc_${locationCount}`;
+  const div = document.createElement("div");
+  div.className = "flex gap-2";
+  div.innerHTML = `
+    <input type="text" placeholder="Label (e.g. Home)" value="${defaultName}" class="border rounded-lg p-2 w-32 label-input">
+    <input type="text" placeholder="Type any address/area..." value="${defaultVal}" class="border rounded-lg p-2 flex-1 query-input" id="${id}">
+    <button onclick="this.parentElement.remove()" class="px-3 text-slate-400 hover:text-red-500" title="Remove">&times;</button>
+  `;
+  document.getElementById("locationInputs").appendChild(div);
+}
+
+addLocation("Home", "Connaught Place, Delhi");
+addLocation("Work", "Bandra Kurla Complex, Mumbai");
+
+function profileParams() {
+  const age = document.getElementById("ageGroup").value;
+  return new URLSearchParams({
+    asthma: document.getElementById("asthma").checked,
+    heart_condition: document.getElementById("heart").checked,
+    pregnant: document.getElementById("pregnant").checked,
+    elderly: age === "elderly",
+    child: age === "child",
+    outdoor_job: document.getElementById("outdoor").checked,
+    activity: document.getElementById("activity").value,
+    language: document.getElementById("language").value,
+    tone: document.getElementById("tone").value,
+  });
+}
+
+async function checkAll() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+  const rows = document.querySelectorAll("#locationInputs > div");
+
+  for (const row of rows) {
+    const label = row.querySelector(".label-input").value || "Location";
+    const query = row.querySelector(".query-input").value;
+    if (!query) continue;
+
+    const card = document.createElement("div");
+    card.className = "bg-white rounded-2xl shadow-sm p-6 border-l-4 border-slate-200";
+    card.innerHTML = `<div class="animate-pulse text-slate-400">Loading ${label}...</div>`;
+    resultsDiv.appendChild(card);
+
+    const params = profileParams();
+    params.set("location", query);
+
+    try {
+      const res = await fetch(`${API}/forecast?${params}`);
+      const text = await res.text();
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        throw new Error(res.ok ? "Server returned a non-JSON response." : `Server error (${res.status}): ${text.slice(0, 120)}`);
+      }
+      renderCard(card, label, data);
+    } catch (e) {
+      card.innerHTML = `<div class="text-red-500 text-sm">Could not load ${label}: ${e.message}. Try again.</div>`;
+    }
+
+    await new Promise(r => setTimeout(r, 1200)); // pace requests, respects Nominatim's rate limit
+  }
+}
+
+const RISK_ICONS = {
+  Good: "✓", Satisfactory: "✓", Moderate: "!", Poor: "!", "Very Poor": "⚠", Severe: "⚠",
+};
+
+function renderCard(card, label, data) {
+  if (!data || !data.mode) {
+    card.innerHTML = `<h3 class="font-bold text-lg mb-2">${label}</h3><p class="text-red-500 text-sm">Unexpected server response.</p>`;
+    return;
+  }
+  if (data.mode === "error") {
+    card.innerHTML = `<h3 class="font-bold text-lg mb-2">${label}</h3><p class="text-red-500 text-sm">${data.message}</p>`;
+    return;
+  }
+  if (data.mode === "live_only") {
+    card.innerHTML = `
+      <h3 class="font-bold text-lg mb-1">${label}</h3>
+      <p class="text-xs text-slate-400 mb-3">${data.display_name}</p>
+      <p class="text-amber-600 text-sm mb-3">${data.note}</p>
+      <div class="text-2xl font-bold">${data.live_data?.pm25 ?? "N/A"} µg/m³</div>
+      <p class="text-xs text-slate-400">Live from ${data.live_data?.station_name ?? "unknown source"}</p>
+    `;
+    return;
+  }
+
+  const riskKey = (data.risk_level ?? "Moderate").replace(" ", "");
+  const icon = RISK_ICONS[data.risk_level] ?? "";
+  card.className = `bg-white rounded-2xl shadow-sm p-6 border-l-4 accent-${riskKey}`;
+  card.innerHTML = `
+    <h3 class="font-bold text-lg mb-1">${label}</h3>
+    <p class="text-xs text-slate-400 mb-1">${data.display_name}</p>
+    <p class="text-xs text-slate-400 mb-3">Nearest station: ${data.station} (${data.distance_km} km)</p>
+    ${data.data_age_hours > 6 ? `<p class="text-xs text-red-500 mb-3">Data is ${Math.round(data.data_age_hours / 24)} day(s) old — forecast may be unreliable.</p>` : ""}
+    ${data.confidence_note ? `<p class="text-xs text-amber-600 mb-3">${data.confidence_note}</p>` : ""}
+    <div class="flex gap-6 mb-3">
+      <div><div class="text-xs text-slate-400">Current</div><div class="text-xl font-bold">${data.current_pm25} µg/m³</div></div>
+      <div><div class="text-xs text-slate-400">6h Forecast</div><div class="text-xl font-bold">${data.forecast_point} µg/m³</div>
+        <div class="text-xs text-slate-400">Range: ${data.forecast_lower}-${data.forecast_upper}</div></div>
+    </div>
+    <span class="risk-badge px-3 py-1 rounded-full text-sm font-medium mb-3 risk-${riskKey}">${icon} ${data.risk_level}</span>
+    <div class="bg-indigo-50 rounded-lg p-3 text-sm text-indigo-900 mb-2 mt-3">${data.message}</div>
+    <p class="text-xs text-slate-400">${data.explanation}</p>
+  `;
+}
+</script>
+</body>
+</html>

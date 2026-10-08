@@ -1,0 +1,15 @@
+requests
+pandas
+numpy
+scikit-learn
+xgboost
+streamlit
+groq
+python-dotenv
+schedule
+matplotlib
+fastapi
+uvicorn[standard]
+pytest
+pyarrow
+httpx

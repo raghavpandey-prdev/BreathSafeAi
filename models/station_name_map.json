@@ -1,0 +1,554 @@
+{
+  "Alipur, Delhi - DPCC": {
+    "matched_station": "Alipur, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Anand Vihar, Delhi - DPCC": {
+    "matched_station": "Anand Vihar, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Arumbakkam, Chennai - TNPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Arya Nagar, Bahadurgarh - HSPCB": {
+    "matched_station": "Arya Nagar, Bahadurgarh - HSPCB",
+    "method": "exact"
+  },
+  "Ashok Vihar, Delhi - DPCC": {
+    "matched_station": "Ashok Vihar, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Aya Nagar, Delhi - IITM": {
+    "matched_station": "Aya Nagar, Delhi - IMD",
+    "method": "prefix"
+  },
+  "Ballygunge, Kolkata - WBPCB": {
+    "matched_station": "Ballygunge, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Bandra Kurla Complex, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Bandra Kurla Complex, Mumbai - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Bapuji Nagar, Bengaluru - KSPCB": {
+    "matched_station": "Bapuji Nagar, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Bawana, Delhi - DPCC": {
+    "matched_station": "Bawana, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Bidhannagar, Kolkata - WBPCB": {
+    "matched_station": "Bidhannagar, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Bollaram Industrial Area, Hyderabad - TSPCB": {
+    "matched_station": "Bollaram Industrial Area, Hyderabad - TSPCB",
+    "method": "exact"
+  },
+  "Borivali East, Mumbai - IITM": {
+    "matched_station": "Borivali East, Mumbai - MPCB",
+    "method": "prefix"
+  },
+  "Borivali East, Mumbai - MPCB": {
+    "matched_station": "Borivali East, Mumbai - MPCB",
+    "method": "exact"
+  },
+  "Burari Crossing, Delhi - IITM": {
+    "matched_station": "Burari Crossing, Delhi - IMD",
+    "method": "prefix"
+  },
+  "Byculla, Mumbai - BMC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "CRRI Mathura Road, Delhi - IITM": {
+    "matched_station": "CRRI Mathura Road, Delhi - IMD",
+    "method": "prefix"
+  },
+  "Cantonment Area, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Central University, Hyderabad - TSPCB": {
+    "matched_station": "Central University, Hyderabad - TSPCB",
+    "method": "exact"
+  },
+  "Chakala-Andheri East, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Chandni Chowk, Delhi - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Chembur, Mumbai - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB": {
+    "matched_station": "Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB",
+    "method": "exact"
+  },
+  "City Railway Station, Bengaluru - KSPCB": {
+    "matched_station": "City Railway Station, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Commonwealth Sports Complex, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "DTU, Delhi - CPCB": {
+    "matched_station": "DTU, Delhi - CPCB",
+    "method": "exact"
+  },
+  "Deonar, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Dhankawadi, Pune - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Dr. Karni Singh Shooting Range, Delhi - DPCC": {
+    "matched_station": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Dwarka-Sector 8, Delhi - DPCC ": {
+    "matched_station": "Dwarka-Sector 8, Delhi - DPCC",
+    "method": "exact"
+  },
+  "ECIL Kapra, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Fort William, Kolkata - WBPCB": {
+    "matched_station": "Fort William, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Ghatkopar, Mumbai - BMC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Govindpuram, Ghaziabad - UPPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Hadapsar, Pune - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Hebbal, Bengaluru - KSPCB": {
+    "matched_station": "Hebbal, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Hombegowda Nagar, Bengaluru - KSPCB": {
+    "matched_station": "Hombegowda Nagar, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "ICRISAT Patancheru, Hyderabad - TSPCB": {
+    "matched_station": "ICRISAT Patancheru, Hyderabad - TSPCB",
+    "method": "exact"
+  },
+  "IDA Pashamylaram, Hyderabad - TSPCB": {
+    "matched_station": "IDA Pashamylaram, Hyderabad - TSPCB",
+    "method": "exact"
+  },
+  "IGI Airport (T3), Delhi - IITM": {
+    "matched_station": "IGI Airport (T3), Delhi - IMD",
+    "method": "prefix"
+  },
+  "IGNOU_Maidan Garhi, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "IHBAS, Dilshad Garden, Delhi - CPCB": {
+    "matched_station": "IHBAS, Dilshad Garden, Delhi - CPCB",
+    "method": "exact"
+  },
+  "IIT Delhi, Delhi - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "IITH Kandi, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "IMD Lodhi Road, Delhi - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "ITO, Delhi - CPCB": {
+    "matched_station": "ITO, Delhi - CPCB",
+    "method": "exact"
+  },
+  "Indirapuram, Ghaziabad - UPPCB": {
+    "matched_station": "Indirapuram, Ghaziabad - UPPCB",
+    "method": "exact"
+  },
+  "JNU, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Jadavpur, Kolkata - WBPCB": {
+    "matched_station": "Jadavpur, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Jahangirpuri, Delhi - DPCC": {
+    "matched_station": "Jahangirpuri, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Jawaharlal Nehru Stadium, Delhi - DPCC": {
+    "matched_station": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Jayanagar 5th Block, Bengaluru - KSPCB": {
+    "matched_station": "Jayanagar 5th Block, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Jigani, Bengaluru - KSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kandivali West, Mumbai - BMC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kasturi Nagar, Bengaluru - KSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Katraj Dairy, Pune - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kherwadi_Bandra East, Mumbai - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Khindipada-Bhandup West, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Knowledge Park - III, Greater Noida - UPPCB": {
+    "matched_station": "Knowledge Park - III, Greater Noida - UPPCB",
+    "method": "exact"
+  },
+  "Knowledge Park - V, Greater Noida - UPPCB": {
+    "matched_station": "Knowledge Park - V, Greater Noida - UPPCB",
+    "method": "exact"
+  },
+  "Kodungaiyur, Chennai - TNPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kokapet, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kompally Municipal Office, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Kurla, Mumbai - MPCB": {
+    "matched_station": "Kurla, Mumbai - MPCB",
+    "method": "exact"
+  },
+  "Loni, Ghaziabad - UPPCB": {
+    "matched_station": "Loni, Ghaziabad - UPPCB",
+    "method": "exact"
+  },
+  "Major Dhyan Chand National Stadium, Delhi - DPCC": {
+    "matched_station": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Malad West, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Manali Village, Chennai - TNPCB": {
+    "matched_station": "Manali Village, Chennai - TNPCB",
+    "method": "exact"
+  },
+  "Manali, Chennai - CPCB": {
+    "matched_station": "Manali, Chennai - CPCB",
+    "method": "exact"
+  },
+  "Mandir Marg, Delhi - DPCC": {
+    "matched_station": "Mandir Marg, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Mazgaon, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Mhada Colony, Pune - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Mindspace-Malad West, Mumbai - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Mulund West, Mumbai - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Mundka, Delhi - DPCC": {
+    "matched_station": "Mundka, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Murthal, Sonipat - HSPCB": {
+    "matched_station": "Murthal, Sonipat - HSPCB",
+    "method": "exact"
+  },
+  "NISE Gwal Pahari, Gurugram - IITM": {
+    "matched_station": "NISE Gwal Pahari, Gurugram - IMD",
+    "method": "prefix"
+  },
+  "NSIT Dwarka, Delhi - CPCB": {
+    "matched_station": "NSIT Dwarka, Delhi - CPCB",
+    "method": "exact"
+  },
+  "NSUT Jaffarpur, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Nacharam_TSIIC IALA, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Najafgarh, Delhi - DPCC": {
+    "matched_station": "Najafgarh, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Narela, Delhi - DPCC": {
+    "matched_station": "Narela, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Navy Nagar-Colaba, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Nehru Nagar, Delhi - DPCC": {
+    "matched_station": "Nehru Nagar, Delhi - DPCC",
+    "method": "exact"
+  },
+  "New Industrial Town, Faridabad - HSPCB": {
+    "matched_station": "New Industrial Town, Faridabad - HSPCB",
+    "method": "exact"
+  },
+  "New Malakpet, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "North Campus, DU, Delhi - IITM": {
+    "matched_station": "North Campus, DU, Delhi - IMD",
+    "method": "prefix"
+  },
+  "Okhla Phase-2, Delhi - DPCC": {
+    "matched_station": "Okhla Phase-2, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Panchawati_Pashan, Pune - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Patparganj, Delhi - DPCC": {
+    "matched_station": "Patparganj, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Peenya, Bengaluru - CPCB": {
+    "matched_station": "Peenya, Bengaluru - CPCB",
+    "method": "exact"
+  },
+  "Perungudi, Chennai - TNPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Powai, Mumbai - MPCB": {
+    "matched_station": "Powai, Mumbai - MPCB",
+    "method": "exact"
+  },
+  "Punjabi Bagh, Delhi - DPCC": {
+    "matched_station": "Punjabi Bagh, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Pusa, Delhi - DPCC": {
+    "matched_station": "Pusa, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Pusa, Delhi - IITM": {
+    "matched_station": "Pusa, Delhi - DPCC",
+    "method": "prefix"
+  },
+  "R K Puram, Delhi - DPCC": {
+    "matched_station": "R K Puram, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Rabindra Bharati University, Kolkata - WBPCB": {
+    "matched_station": "Rabindra Bharati University, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Rabindra Sarobar, Kolkata - WBPCB": {
+    "matched_station": "Rabindra Sarobar, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Ramachandrapuram, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Revenue Colony-Shivajinagar, Pune - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Rohini, Delhi - DPCC": {
+    "matched_station": "Rohini, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Royapuram, Chennai - TNPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Sanathnagar, Hyderabad - TSPCB": {
+    "matched_station": "Sanathnagar, Hyderabad - TSPCB",
+    "method": "exact"
+  },
+  "Sanegurava Halli, Bengaluru - KSPCB": {
+    "matched_station": "Sanegurava Halli, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Sanjay Nagar, Ghaziabad - UPPCB": {
+    "matched_station": "Sanjay Nagar, Ghaziabad - UPPCB",
+    "method": "exact"
+  },
+  "Savitribai Phule Pune University, Pune - MPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Sector - 125, Noida - UPPCB": {
+    "matched_station": "Sector - 125, Noida - UPPCB",
+    "method": "exact"
+  },
+  "Sector - 62, Noida - IITM": {
+    "matched_station": "Sector - 62, Noida - IMD",
+    "method": "prefix"
+  },
+  "Sector 11, Faridabad - HSPCB": {
+    "matched_station": "Sector 11, Faridabad - HSPCB",
+    "method": "exact"
+  },
+  "Sector 30, Faridabad - HSPCB": {
+    "matched_station": "Sector 30, Faridabad - HSPCB",
+    "method": "exact"
+  },
+  "Sector-1, Noida - UPPCB": {
+    "matched_station": "Sector-1, Noida - UPPCB",
+    "method": "exact"
+  },
+  "Sector-116, Noida - UPPCB": {
+    "matched_station": "Sector-116, Noida - UPPCB",
+    "method": "exact"
+  },
+  "Sector-51, Gurugram - HSPCB": {
+    "matched_station": "Sector-51, Gurugram - HSPCB",
+    "method": "exact"
+  },
+  "Sewri, Mumbai - BMC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Shadipur, Delhi - CPCB": {
+    "matched_station": "Shadipur, Delhi - CPCB",
+    "method": "exact"
+  },
+  "Shivaji Nagar, Mumbai - BMC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Shivapura_Peenya, Bengaluru - KSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Siddharth Nagar-Worli, Mumbai - IITM": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Silk Board, Bengaluru - KSPCB": {
+    "matched_station": "Silk Board, Bengaluru - KSPCB",
+    "method": "exact"
+  },
+  "Sion, Mumbai - MPCB": {
+    "matched_station": "Sion, Mumbai - MPCB",
+    "method": "exact"
+  },
+  "Sirifort, Delhi - CPCB": {
+    "matched_station": "Sirifort, Delhi - CPCB",
+    "method": "exact"
+  },
+  "Somajiguda, Hyderabad - TSPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Sonia Vihar, Delhi - DPCC": {
+    "matched_station": "Sonia Vihar, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Sri Aurobindo Marg, Delhi - DPCC": {
+    "matched_station": "Sri Aurobindo Marg, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Talkatora Garden, Delhi - DPCC": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Teri Gram, Gurugram - HSPCB": {
+    "matched_station": "Teri Gram, Gurugram - HSPCB",
+    "method": "exact"
+  },
+  "Vasundhara, Ghaziabad - UPPCB": {
+    "matched_station": "Vasundhara, Ghaziabad - UPPCB",
+    "method": "exact"
+  },
+  "Ved Vihar-Loni, Ghaziabad - UPPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Velachery Res. Area, Chennai - CPCB": {
+    "matched_station": "Velachery Res. Area, Chennai - CPCB",
+    "method": "exact"
+  },
+  "Victoria, Kolkata - WBPCB": {
+    "matched_station": "Victoria, Kolkata - WBPCB",
+    "method": "exact"
+  },
+  "Vikas Sadan, Gurugram - HSPCB": {
+    "matched_station": "Vikas Sadan, Gurugram - HSPCB",
+    "method": "exact"
+  },
+  "Vivek Vihar, Delhi - DPCC": {
+    "matched_station": "Vivek Vihar, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Wave City, Ghaziabad - UPPCB": {
+    "matched_station": null,
+    "method": "none"
+  },
+  "Wazirpur, Delhi - DPCC": {
+    "matched_station": "Wazirpur, Delhi - DPCC",
+    "method": "exact"
+  },
+  "Worli, Mumbai - MPCB": {
+    "matched_station": "Worli, Mumbai - MPCB",
+    "method": "exact"
+  },
+  "Zoo Park, Hyderabad - TSPCB": {
+    "matched_station": "Zoo Park, Hyderabad - TSPCB",
+    "method": "exact"
+  }
+}

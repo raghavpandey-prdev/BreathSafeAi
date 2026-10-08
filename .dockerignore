@@ -1,0 +1,8 @@
+breathesafe_env/
+__pycache__/
+*.pyc
+.git/
+.env
+data/raw/
+data/processed/historical_features.csv
+data/processed/training_data.parquet
